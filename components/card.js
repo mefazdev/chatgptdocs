@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import NextImage from "./image";
-import Image from "next/image";
+ 
 
 const Card = ({ article }) => {
   const s = ()=>{
