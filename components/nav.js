@@ -13,7 +13,7 @@ const Nav = ({ categories }) => {
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
-              <Link href="/" ><p style={{fontSize:'20px'}}>Artículo</p></Link>
+              <Link href="/" ><p style={{fontSize:'20px',color:'#fff'}}>Chatgpt Docs</p></Link>
             </li>
           </ul>
         </div>
@@ -27,7 +27,7 @@ const Nav = ({ categories }) => {
               return (
                 <li key={category.id}>
                   <Link href={`/category/${category.attributes.slug}`} >
-                     <p className="uk-link-reset">{category.attributes.name}</p>
+                     <p style={{color:'#fff'}}>{category.attributes.name}</p>
                       
                      
                   </Link>

@@ -47,11 +47,13 @@ max-width: 85%;
 .uk-navbar-container {
   background: black !important;
   font-family: Staatliches;
-  color: #fff;
+  /* color: greenyellow; */
   padding: 0px 10px 0px 10px ;
   position: fixed;
   width: 100%;
  z-index: 100;
+ opacity: 1;
+ /* border: saddlebrown solid; */
 }
 .uk-section{
   padding-top: 140px;

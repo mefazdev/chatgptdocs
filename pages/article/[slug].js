@@ -157,7 +157,9 @@ const Article = ({ article, categories }) => {
       <div className="uk-section">
         <div className="uk-container uk-container-small">
         <h1>{article.attributes.title}</h1>
-          <ReactMarkdown children={article.attributes.content} escapeHtml={false} />
+          {/* <ReactMarkdown children={article.attributes.content} escapeHtml={false} /> */}
+
+          <ReactMarkdown   >{article.attributes.content}</ReactMarkdown>
        
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
