@@ -10,6 +10,8 @@ const Nav = ({ categories }) => {
 
     <div>
       <nav className="uk-navbar-container" data-uk-navbar>
+      {/* data-uk-navbar */}
+      {/* uk-navbar-container */}
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
@@ -21,7 +23,7 @@ const Nav = ({ categories }) => {
 
           <ul className="uk-navbar-nav">
             <div className='menu__img' onClick={()=> setState(!state)}>
-              <Image src={Menu}/>
+              <Image src={Menu} alt=''/>
             </div>
             {categories?.map((category) => {
               return (

@@ -5,6 +5,8 @@ import Articles from "../../components/articles";
 import { fetchAPI } from "../../lib/api";
 
 const Category = ({ category, categories }) => {
+
+
   const seo = {
     metaTitle: category.attributes.name,
     metaDescription: `All ${category.attributes.name} articles`,
@@ -24,13 +26,13 @@ const Category = ({ category, categories }) => {
 };
 
 export async function getStaticPaths() {
-  const categoriesRes = await fetchAPI("/categories", { fields: ["slug"] });
+  const categoriesRes = await fetchAPI("/categories",{ fields: ["slug"] }  );
 
   return {
     paths: categoriesRes.data.map((category) => ({
       params: {
         slug: category.attributes.slug,
-      },
+      },   
     })),
     fallback: false,
   };
