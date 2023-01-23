@@ -46,9 +46,9 @@ const Article = ({ article, categories }) => {
               )}
             </div>
             <div className="uk-width-expand">
-              <p className="uk-margin-remove-bottom">
+              {/* <p className="uk-margin-remove-bottom">
                 By {article.attributes.author.name}
-              </p>
+              </p> */}
               <p className="uk-text-meta uk-margin-remove-top">
                 <Moment format="MMM Do YYYY">
                   {article.attributes.published_at}
@@ -80,7 +80,8 @@ export async function getStaticProps({ params }) {
     filters: {
       slug: params.slug,
     },
-    populate: ["image", "category", "author.picture"],
+    // populate: ["image", "category", "author.picture"],
+    populate: ["image", "category"],
   });
   const categoriesRes = await fetchAPI("/categories");
 
