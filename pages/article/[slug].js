@@ -17,9 +17,9 @@ const Article = ({ article, categories }) => {
   };
 
   return (
-    <Layout categories={categories.data}>
+    <Layout categories={categories?.data}>
       <Seo seo={seo} />
-      <div className="article__content">
+      {/* <div className="article__content">
         <div
           id="banner"
           className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-contain  uk-light uk-padding uk-margin"
@@ -27,37 +27,30 @@ const Article = ({ article, categories }) => {
           data-srcset={imageUrl}
           data-uk-img
         >
-          {/* <img src={imageUrl} /> */}
+          
         </div>
       </div>
 
       <div className="uk-section">
         <div className="uk-container uk-container-small">
-          <h1>{article.attributes.title}</h1>
-          {/* <ReactMarkdown children={article.attributes.content} escapeHtml={false} /> */}
-
-          <ReactMarkdown>{article.attributes.content}</ReactMarkdown>
+          <h1>{article?.attributes?.title}</h1>
+         
+          <ReactMarkdown>{article?.attributes?.content}</ReactMarkdown>
 
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-            {/* <div>
-              {article.attributes.author.picture && (
-                <NextImage image={article.attributes.author.picture} />
-              )}
-            </div> */}
+         
             <div className="uk-width-expand">
-              {/* <p className="uk-margin-remove-bottom">
-                By {article.attributes.author.name}
-              </p> */}
+              
               <p className="uk-text-meta uk-margin-remove-top">
                 <Moment format="MMM Do YYYY">
-                  {article.attributes.published_at}
+                  {article?.attributes?.published_at}
                 </Moment>
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };
@@ -92,3 +85,16 @@ export async function getStaticProps({ params }) {
 }
 
 export default Article;
+
+
+
+   {/* <div>
+              {article.attributes.author.picture && (
+                <NextImage image={article.attributes.author.picture} />
+              )}
+            </div> */}
+
+
+            {/* <p className="uk-margin-remove-bottom">
+                By {article.attributes.author.name}
+              </p> */}

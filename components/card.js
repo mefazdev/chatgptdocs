@@ -4,9 +4,7 @@ import NextImage from "./image";
  
 
 const Card = ({ article }) => {
-  const s = ()=>{
-    console.log('hellllo'+article.attributes.image.data.attributes.url)
-  }
+  
   
   return (
     <Link href={`/article/${article.attributes.slug}`} className="uk-link-reset">
