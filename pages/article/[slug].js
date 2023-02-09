@@ -31,7 +31,7 @@ const Article = ({ article, categories }) => {
         </div>
       </div>
 
-      {/* <div className="uk-section">
+      <div className="uk-section">
         <div className="uk-container uk-container-small">
           <h1>{article?.attributes?.title}</h1>
          
@@ -44,13 +44,13 @@ const Article = ({ article, categories }) => {
               
               <p className="uk-text-meta uk-margin-remove-top">
                 <Moment format="MMM Do YYYY">
-                  {article?.attributes?.published_at}
+                  {/* {article?.attributes?.published_at} */}
                 </Moment>
               </p>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </Layout>
   );
 };
