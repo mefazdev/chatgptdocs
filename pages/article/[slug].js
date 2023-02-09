@@ -19,7 +19,7 @@ const Article = ({ article, categories }) => {
   return (
     <Layout categories={categories?.data}>
       <Seo seo={seo} />
-      {/* <div className="article__content">
+      <div className="article__content">
         <div
           id="banner"
           className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-contain  uk-light uk-padding uk-margin"
@@ -31,7 +31,7 @@ const Article = ({ article, categories }) => {
         </div>
       </div>
 
-      <div className="uk-section">
+      {/* <div className="uk-section">
         <div className="uk-container uk-container-small">
           <h1>{article?.attributes?.title}</h1>
          
